@@ -1,0 +1,69 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@mixin MyFlex() {
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+}
+.Navbar{
+    border-bottom: 2px solid gray;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    .navbarLogo{
+        width: 20%;
+        @include MyFlex();
+        font-size:30px;
+    }
+    .navbarRoute{
+        width: 40%;
+        @include MyFlex();
+        ul{
+            list-style: none;
+            gap: 40px;
+            font-size: 23px;
+        @include MyFlex();
+        .link{
+            text-decoration: none;
+            color: black;
+        }
+
+        }
+
+    }
+    .navbarReduxBox{
+        width: 40%;
+        @include MyFlex();
+        gap: 20px;
+        button{
+            font-size: 25px;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        @include MyFlex();
+
+        }
+        .navbarInputBox{
+            width: 240px;
+            background-color: rgba(128, 128, 128, 0.378);
+            height: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 10px 0px 0px ;
+            input{
+                background-color: transparent;
+                border: none;
+                outline: none;
+                padding: 0px 20px;
+            }
+           
+        }
+
+    }
+}

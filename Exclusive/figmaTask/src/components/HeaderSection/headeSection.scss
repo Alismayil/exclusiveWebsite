@@ -1,0 +1,159 @@
+@mixin MyFlex() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+#headerSection {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+
+
+    .headerSectionLeftBox {
+        width: 30%;
+        height: 100%;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        padding: 50px 20px;
+        border-right: 2px solid gray;
+
+        .filterBox{
+            width: 60%;
+            height: 90%;
+            ul{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                list-style: none;
+                font-size: 20px;
+                li{
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 0px 10px 0px 0px;
+                    .filerIcon{
+                        width: 50px;
+                        height: 30px
+                    }
+                }
+            }
+
+        }
+    }
+
+    .headerSectionRightBox {
+        @include MyFlex();
+        width: 70%;
+
+        .swiperLeftBox {
+            background-color: black;
+            width: 50%;
+            height: 100%;
+            color: white;
+            padding: 20px 20px;
+
+            .appleLogo {
+                height: 25%;
+                display: flex;
+                display: flex;
+                align-items: center;
+
+
+                img {
+                    max-width: 60px;
+                }
+                p{
+                    font-size: 20px;
+                    margin-left: 15px;
+                }
+            }
+
+            .phoneInform {
+                margin-top: 20px;
+                height: 50%;
+                font-size: 60px;
+                max-width: 63%;
+                p{
+                    margin-left: -0px;
+                }
+            }
+
+            .headerBtn {
+                padding: 0px 12px;
+                height: 30px;
+                margin-top: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: start;
+                cursor: pointer;
+                span {
+                    @include MyFlex();
+                    transition: 0.5s;
+
+                    .headerIcon {
+                        margin-left: 10px;
+                        height: 20px;
+                        
+                    }
+                }
+
+            }
+            .headerBtn:hover{
+                span{
+                    transform: translate(10px);
+                    transition: 0.5s;
+                }
+            }
+
+        }
+
+        .swiperRightBox {
+            background-color: black;
+            width: 50%;
+            height: 100%;
+
+            img {
+                max-width: 90%;
+            }
+        }
+
+    }
+
+}
+
+.swiper {
+    width: 1000px;
+    height: 330px;
+    display: flex;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    //  max-width: 100px;
+    object-fit: cover;
+    display: flex;
+
+}
+
+.swiper-pagination-bullet {
+    width: 14px !important;
+    height: 14px !important;
+    display: inline-block;
+    border-radius: var(--swiper-pagination-bullet-border-radius, 50%);
+    background:#DB4444 !important;
+    border: 2px solid white;
+    opacity: var(--swiper-pagination-bullet-inactive-opacity, 0.2);
+}

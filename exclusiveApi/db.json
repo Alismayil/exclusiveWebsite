@@ -1,0 +1,58 @@
+{
+    "exclusive": [
+        {
+            "id": 1,
+            "rating":1,
+            "name": "HAVIT HV-G92 Gamepad",
+            "image": "https://s3-alpha-sig.figma.com/img/5d5c/2e52/50752d55f8b60f2aa2923183dadbc135?Expires=1703462400&Signature=nmD~b-XlPbfshO-fIF0sFl4aVMIV-Ves5SN0LmtVbaiNDnDEvIL7LQnJTWpFs8VebB7iaau6vB1QpMoxPwMpUtdE4Duz9mGt81ZMGPyNdDqS6kGxeAPUlIKl3E7kw9EiHjDGiYi5FYGfI9Gb-YnZTy~Q8peV25At0W2dDCW4JSjWXy62Ju-LihXK2RMsjEkDg-EG9T2Z~y4J4PD5zDnBp6rXZtBWVxkOhPZroZbtE7Re~s5JwbnwShGcGD7pUAupfg8-n2ZN4ssSUnU76ydeEN7REE8A2UP4QUNnYxRCkgPDDMFucK1kXKqQpfseRwFh9TvE56E~fm3HT8brUR4rJQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+        },
+        {
+            "id": 2,
+            "rating":2,
+            "name": "HAVIT HV-G92 Gamepad",
+            "image": "https://s3-alpha-sig.figma.com/img/5d5c/2e52/50752d55f8b60f2aa2923183dadbc135?Expires=1703462400&Signature=nmD~b-XlPbfshO-fIF0sFl4aVMIV-Ves5SN0LmtVbaiNDnDEvIL7LQnJTWpFs8VebB7iaau6vB1QpMoxPwMpUtdE4Duz9mGt81ZMGPyNdDqS6kGxeAPUlIKl3E7kw9EiHjDGiYi5FYGfI9Gb-YnZTy~Q8peV25At0W2dDCW4JSjWXy62Ju-LihXK2RMsjEkDg-EG9T2Z~y4J4PD5zDnBp6rXZtBWVxkOhPZroZbtE7Re~s5JwbnwShGcGD7pUAupfg8-n2ZN4ssSUnU76ydeEN7REE8A2UP4QUNnYxRCkgPDDMFucK1kXKqQpfseRwFh9TvE56E~fm3HT8brUR4rJQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+        },
+        {
+            "id": 3,
+            "rating":3,
+            "name": "HAVIT HV-G92 Gamepad",
+            "image": "https://s3-alpha-sig.figma.com/img/5d5c/2e52/50752d55f8b60f2aa2923183dadbc135?Expires=1703462400&Signature=nmD~b-XlPbfshO-fIF0sFl4aVMIV-Ves5SN0LmtVbaiNDnDEvIL7LQnJTWpFs8VebB7iaau6vB1QpMoxPwMpUtdE4Duz9mGt81ZMGPyNdDqS6kGxeAPUlIKl3E7kw9EiHjDGiYi5FYGfI9Gb-YnZTy~Q8peV25At0W2dDCW4JSjWXy62Ju-LihXK2RMsjEkDg-EG9T2Z~y4J4PD5zDnBp6rXZtBWVxkOhPZroZbtE7Re~s5JwbnwShGcGD7pUAupfg8-n2ZN4ssSUnU76ydeEN7REE8A2UP4QUNnYxRCkgPDDMFucK1kXKqQpfseRwFh9TvE56E~fm3HT8brUR4rJQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+        },
+        {
+            "id": 4,
+            "rating":4.5,
+            "name": "HAVIT HV-G92 Gamepad",
+            "image": "https://s3-alpha-sig.figma.com/img/5d5c/2e52/50752d55f8b60f2aa2923183dadbc135?Expires=1703462400&Signature=nmD~b-XlPbfshO-fIF0sFl4aVMIV-Ves5SN0LmtVbaiNDnDEvIL7LQnJTWpFs8VebB7iaau6vB1QpMoxPwMpUtdE4Duz9mGt81ZMGPyNdDqS6kGxeAPUlIKl3E7kw9EiHjDGiYi5FYGfI9Gb-YnZTy~Q8peV25At0W2dDCW4JSjWXy62Ju-LihXK2RMsjEkDg-EG9T2Z~y4J4PD5zDnBp6rXZtBWVxkOhPZroZbtE7Re~s5JwbnwShGcGD7pUAupfg8-n2ZN4ssSUnU76ydeEN7REE8A2UP4QUNnYxRCkgPDDMFucK1kXKqQpfseRwFh9TvE56E~fm3HT8brUR4rJQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+        },
+        {
+            "id": 5,
+            "rating":5,
+            "name": "HAVIT HV-G92 Gamepad",
+            "image": "https://s3-alpha-sig.figma.com/img/5d5c/2e52/50752d55f8b60f2aa2923183dadbc135?Expires=1703462400&Signature=nmD~b-XlPbfshO-fIF0sFl4aVMIV-Ves5SN0LmtVbaiNDnDEvIL7LQnJTWpFs8VebB7iaau6vB1QpMoxPwMpUtdE4Duz9mGt81ZMGPyNdDqS6kGxeAPUlIKl3E7kw9EiHjDGiYi5FYGfI9Gb-YnZTy~Q8peV25At0W2dDCW4JSjWXy62Ju-LihXK2RMsjEkDg-EG9T2Z~y4J4PD5zDnBp6rXZtBWVxkOhPZroZbtE7Re~s5JwbnwShGcGD7pUAupfg8-n2ZN4ssSUnU76ydeEN7REE8A2UP4QUNnYxRCkgPDDMFucK1kXKqQpfseRwFh9TvE56E~fm3HT8brUR4rJQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+        },
+        {
+            "id": 6,
+            "rating":2,
+            "name": "HAVIT HV-G92 Gamepad",
+            "image": "https://s3-alpha-sig.figma.com/img/5d5c/2e52/50752d55f8b60f2aa2923183dadbc135?Expires=1703462400&Signature=nmD~b-XlPbfshO-fIF0sFl4aVMIV-Ves5SN0LmtVbaiNDnDEvIL7LQnJTWpFs8VebB7iaau6vB1QpMoxPwMpUtdE4Duz9mGt81ZMGPyNdDqS6kGxeAPUlIKl3E7kw9EiHjDGiYi5FYGfI9Gb-YnZTy~Q8peV25At0W2dDCW4JSjWXy62Ju-LihXK2RMsjEkDg-EG9T2Z~y4J4PD5zDnBp6rXZtBWVxkOhPZroZbtE7Re~s5JwbnwShGcGD7pUAupfg8-n2ZN4ssSUnU76ydeEN7REE8A2UP4QUNnYxRCkgPDDMFucK1kXKqQpfseRwFh9TvE56E~fm3HT8brUR4rJQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+        },
+        {
+            "id": 7,
+            "rating":1.5,
+            "name": "HAVIT HV-G92 Gamepad",
+            "image": "https://s3-alpha-sig.figma.com/img/5d5c/2e52/50752d55f8b60f2aa2923183dadbc135?Expires=1703462400&Signature=nmD~b-XlPbfshO-fIF0sFl4aVMIV-Ves5SN0LmtVbaiNDnDEvIL7LQnJTWpFs8VebB7iaau6vB1QpMoxPwMpUtdE4Duz9mGt81ZMGPyNdDqS6kGxeAPUlIKl3E7kw9EiHjDGiYi5FYGfI9Gb-YnZTy~Q8peV25At0W2dDCW4JSjWXy62Ju-LihXK2RMsjEkDg-EG9T2Z~y4J4PD5zDnBp6rXZtBWVxkOhPZroZbtE7Re~s5JwbnwShGcGD7pUAupfg8-n2ZN4ssSUnU76ydeEN7REE8A2UP4QUNnYxRCkgPDDMFucK1kXKqQpfseRwFh9TvE56E~fm3HT8brUR4rJQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+        },
+        {
+            "id": 8,
+            "rating":1,
+            "name": "HAVIT HV-G92 Gamepad",
+            "image": "https://s3-alpha-sig.figma.com/img/5d5c/2e52/50752d55f8b60f2aa2923183dadbc135?Expires=1703462400&Signature=nmD~b-XlPbfshO-fIF0sFl4aVMIV-Ves5SN0LmtVbaiNDnDEvIL7LQnJTWpFs8VebB7iaau6vB1QpMoxPwMpUtdE4Duz9mGt81ZMGPyNdDqS6kGxeAPUlIKl3E7kw9EiHjDGiYi5FYGfI9Gb-YnZTy~Q8peV25At0W2dDCW4JSjWXy62Ju-LihXK2RMsjEkDg-EG9T2Z~y4J4PD5zDnBp6rXZtBWVxkOhPZroZbtE7Re~s5JwbnwShGcGD7pUAupfg8-n2ZN4ssSUnU76ydeEN7REE8A2UP4QUNnYxRCkgPDDMFucK1kXKqQpfseRwFh9TvE56E~fm3HT8brUR4rJQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+        },
+        {
+            "id": 9,
+            "rating":4,
+            "name": "HAVIT HV-G92 Gamepad",
+            "image": "https://s3-alpha-sig.figma.com/img/5d5c/2e52/50752d55f8b60f2aa2923183dadbc135?Expires=1703462400&Signature=nmD~b-XlPbfshO-fIF0sFl4aVMIV-Ves5SN0LmtVbaiNDnDEvIL7LQnJTWpFs8VebB7iaau6vB1QpMoxPwMpUtdE4Duz9mGt81ZMGPyNdDqS6kGxeAPUlIKl3E7kw9EiHjDGiYi5FYGfI9Gb-YnZTy~Q8peV25At0W2dDCW4JSjWXy62Ju-LihXK2RMsjEkDg-EG9T2Z~y4J4PD5zDnBp6rXZtBWVxkOhPZroZbtE7Re~s5JwbnwShGcGD7pUAupfg8-n2ZN4ssSUnU76ydeEN7REE8A2UP4QUNnYxRCkgPDDMFucK1kXKqQpfseRwFh9TvE56E~fm3HT8brUR4rJQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+        }
+    ]
+}
