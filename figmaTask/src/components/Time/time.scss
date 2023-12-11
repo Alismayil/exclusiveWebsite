@@ -1,0 +1,21 @@
+.timer{
+ .timerNames{
+    display: flex;
+    gap: 50px;
+    p{
+        font-size: 20px;
+    }
+ }
+ .TimerNumber{
+    display: flex;
+    gap: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p{
+        font-size: 50px;
+        color: #DB4444;
+    }
+ }
+    
+}

@@ -2,57 +2,83 @@
     "exclusive": [
         {
             "id": 1,
-            "rating":1,
+            "rating":5,
             "name": "HAVIT HV-G92 Gamepad",
+            "abate":40,
+            "comment":88,
+            "newPrice":120,
+            "oldPrice":160,
             "image": "https://s3-alpha-sig.figma.com/img/5d5c/2e52/50752d55f8b60f2aa2923183dadbc135?Expires=1703462400&Signature=nmD~b-XlPbfshO-fIF0sFl4aVMIV-Ves5SN0LmtVbaiNDnDEvIL7LQnJTWpFs8VebB7iaau6vB1QpMoxPwMpUtdE4Duz9mGt81ZMGPyNdDqS6kGxeAPUlIKl3E7kw9EiHjDGiYi5FYGfI9Gb-YnZTy~Q8peV25At0W2dDCW4JSjWXy62Ju-LihXK2RMsjEkDg-EG9T2Z~y4J4PD5zDnBp6rXZtBWVxkOhPZroZbtE7Re~s5JwbnwShGcGD7pUAupfg8-n2ZN4ssSUnU76ydeEN7REE8A2UP4QUNnYxRCkgPDDMFucK1kXKqQpfseRwFh9TvE56E~fm3HT8brUR4rJQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
         },
         {
             "id": 2,
-            "rating":2,
-            "name": "HAVIT HV-G92 Gamepad",
-            "image": "https://s3-alpha-sig.figma.com/img/5d5c/2e52/50752d55f8b60f2aa2923183dadbc135?Expires=1703462400&Signature=nmD~b-XlPbfshO-fIF0sFl4aVMIV-Ves5SN0LmtVbaiNDnDEvIL7LQnJTWpFs8VebB7iaau6vB1QpMoxPwMpUtdE4Duz9mGt81ZMGPyNdDqS6kGxeAPUlIKl3E7kw9EiHjDGiYi5FYGfI9Gb-YnZTy~Q8peV25At0W2dDCW4JSjWXy62Ju-LihXK2RMsjEkDg-EG9T2Z~y4J4PD5zDnBp6rXZtBWVxkOhPZroZbtE7Re~s5JwbnwShGcGD7pUAupfg8-n2ZN4ssSUnU76ydeEN7REE8A2UP4QUNnYxRCkgPDDMFucK1kXKqQpfseRwFh9TvE56E~fm3HT8brUR4rJQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+            "rating":4,
+            "name": "AK-900 Wired Keyboard",
+            "abate":35,
+            "comment":75,
+            "newPrice":960,
+            "oldPrice":1160,
+            "image": "https://s3-alpha-sig.figma.com/img/e59d/9f34/8cc24eeff489863523b63971c3ff8e4a?Expires=1703462400&Signature=ovY9RFaNd3UkqfQYD9n6s-dbjSpHe5DeLZ9K-0MVaCBGpp0BsB60s2yQxSLC14~v~~iZbplxeOZBwxIjiAdiP0Sslf8oUyhUQGG~QGZLigFM8SsgRDaLMGv0Bn98sw9OdprgoJaxJBUjevpfY35JkdoARMX3~HS5EkJweHfl7QqwmO~TjPs0ObCiuGg1GzM-WpJSS0DNdpoZxZVjGDhYEuGpQ5UITzNrHZbd8XXwythQUnhgSZbXurxICmzj-pERQtkEW9oghiObCtyYY~uMecSJg~5geNoBrzS1CquGFPtuPWJn9uxlCykmD2lzXU8QLQ3q~pbTTpUpD5CTGzkA7A__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
         },
         {
             "id": 3,
-            "rating":3,
-            "name": "HAVIT HV-G92 Gamepad",
-            "image": "https://s3-alpha-sig.figma.com/img/5d5c/2e52/50752d55f8b60f2aa2923183dadbc135?Expires=1703462400&Signature=nmD~b-XlPbfshO-fIF0sFl4aVMIV-Ves5SN0LmtVbaiNDnDEvIL7LQnJTWpFs8VebB7iaau6vB1QpMoxPwMpUtdE4Duz9mGt81ZMGPyNdDqS6kGxeAPUlIKl3E7kw9EiHjDGiYi5FYGfI9Gb-YnZTy~Q8peV25At0W2dDCW4JSjWXy62Ju-LihXK2RMsjEkDg-EG9T2Z~y4J4PD5zDnBp6rXZtBWVxkOhPZroZbtE7Re~s5JwbnwShGcGD7pUAupfg8-n2ZN4ssSUnU76ydeEN7REE8A2UP4QUNnYxRCkgPDDMFucK1kXKqQpfseRwFh9TvE56E~fm3HT8brUR4rJQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+            "rating":5,
+            "name": "IPS LCD Gaming Monitor",
+            "abate":30,
+            "comment":99,
+            "newPrice":370,
+            "oldPrice":400,
+            "image": "https://s3-alpha-sig.figma.com/img/5e63/4682/db5174aff99bb9337d2dc9598a0b44e4?Expires=1703462400&Signature=Vni5c9T-N7Xyvj30sNOkagD8fOI7-vD5tMnhzDIzu5NSVdLFwrsrhzdq1mVpzUhwzBw0DHvhllrchduWgWA-u-RIQqPxdzAkZ53n3vX-ewBUhiFqjFWQaJ8tQ2JA0Et3XSoMgnrRP8TmOOjHck548bJb142gDAljlX43Wvi8Vw~b7HfA~hR0xQY72Ew23PsNs8b96uWlvvRrDokji~JKTFDn0yuaxxBnniHHOpwSTBl5IS2nMkBln~5V4QsaziaoIvsjIiTWlQZmHYDWYtbr0oCqw1tWjUZt8ERvKtjSO9~3vIG3n1nS-UNVLj3CuqwIAZySg9hUnVWnhB54dAOPfA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
         },
         {
             "id": 4,
             "rating":4.5,
-            "name": "HAVIT HV-G92 Gamepad",
-            "image": "https://s3-alpha-sig.figma.com/img/5d5c/2e52/50752d55f8b60f2aa2923183dadbc135?Expires=1703462400&Signature=nmD~b-XlPbfshO-fIF0sFl4aVMIV-Ves5SN0LmtVbaiNDnDEvIL7LQnJTWpFs8VebB7iaau6vB1QpMoxPwMpUtdE4Duz9mGt81ZMGPyNdDqS6kGxeAPUlIKl3E7kw9EiHjDGiYi5FYGfI9Gb-YnZTy~Q8peV25At0W2dDCW4JSjWXy62Ju-LihXK2RMsjEkDg-EG9T2Z~y4J4PD5zDnBp6rXZtBWVxkOhPZroZbtE7Re~s5JwbnwShGcGD7pUAupfg8-n2ZN4ssSUnU76ydeEN7REE8A2UP4QUNnYxRCkgPDDMFucK1kXKqQpfseRwFh9TvE56E~fm3HT8brUR4rJQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+            "name": "S-Series Comfort Chair ",
+            "abate":25,
+            "comment":99,
+            "newPrice":375,
+            "oldPrice":400,
+            "image": "https://s3-alpha-sig.figma.com/img/288d/a330/273c46e1c3dc0a8915c4b031d0345347?Expires=1703462400&Signature=CANclMwZZ1MNiIZybxQ3XEtZjbSmq50SMZWvUu3BoHj0JiCvGsAMHfuSusGkETk08F43dSATshv801wfnC2V9zMJd~OPLpfWxCWuagznZa5lI3XuEyuIjY3pW~NQ1HYwDcFf~6qOvMkEPCVD6gx5YrSvgXWZzuhHAOumviAoiOCRnMclMrlZWAcGiNRRo3HxjHhtctAAYGT77YPwb3a0VutKhiEyZ~NRRq5seCeHNIizofAdk5moFmXqmreHe9r9yUpLCPgbGTH~LK8L-qj2Qk-5s3fbVluADwK823vRDDwufECnJeLmdhNCgMM8rPK5Ip2lWVAGlbm9bsRPsPAF9w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
         },
         {
             "id": 5,
             "rating":5,
-            "name": "HAVIT HV-G92 Gamepad",
-            "image": "https://s3-alpha-sig.figma.com/img/5d5c/2e52/50752d55f8b60f2aa2923183dadbc135?Expires=1703462400&Signature=nmD~b-XlPbfshO-fIF0sFl4aVMIV-Ves5SN0LmtVbaiNDnDEvIL7LQnJTWpFs8VebB7iaau6vB1QpMoxPwMpUtdE4Duz9mGt81ZMGPyNdDqS6kGxeAPUlIKl3E7kw9EiHjDGiYi5FYGfI9Gb-YnZTy~Q8peV25At0W2dDCW4JSjWXy62Ju-LihXK2RMsjEkDg-EG9T2Z~y4J4PD5zDnBp6rXZtBWVxkOhPZroZbtE7Re~s5JwbnwShGcGD7pUAupfg8-n2ZN4ssSUnU76ydeEN7REE8A2UP4QUNnYxRCkgPDDMFucK1kXKqQpfseRwFh9TvE56E~fm3HT8brUR4rJQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+            "name": "The north coat",
+            "abate":2,
+            "comment":65,
+            "newPrice":260,
+            "oldPrice":360,
+            "image": "https://s3-alpha-sig.figma.com/img/ee9a/3800/1e9f94261b28e16ea21bacb4144473e8?Expires=1703462400&Signature=iDmVsv8GQsUE0RG1KvOewBnDWr0c4ksCfi6opYDbkxeJdfwZcNohOHMpoc9Jin6HQGBdO8ZAtzp4i0iAEs56j0Hkcbc6slb0VAcun9eWnXsSnt5fSG9B~Cpm6I5cg4crqV5cNKlmuUhIeD3Ol~CBUjBd4U6VXFSm7FI2kz3DoWAB9XN~I7tR4-Eva5Hr6oG9IldshxVM94OwcEuQ-sRWI9AxD3yJXgzJbDvYiF-sWHhrCOnktfoSrToc2jJ454Pk1JTpM5Q1Nq4sLHZnP~SGSpcNwNuowWUwFbQBXQOu0EYwTNSsKz9GTzB4RKftIiLCfEtr9k3-I6oIYAm9HB-tuw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4  "
         },
         {
             "id": 6,
-            "rating":2,
-            "name": "HAVIT HV-G92 Gamepad",
-            "image": "https://s3-alpha-sig.figma.com/img/5d5c/2e52/50752d55f8b60f2aa2923183dadbc135?Expires=1703462400&Signature=nmD~b-XlPbfshO-fIF0sFl4aVMIV-Ves5SN0LmtVbaiNDnDEvIL7LQnJTWpFs8VebB7iaau6vB1QpMoxPwMpUtdE4Duz9mGt81ZMGPyNdDqS6kGxeAPUlIKl3E7kw9EiHjDGiYi5FYGfI9Gb-YnZTy~Q8peV25At0W2dDCW4JSjWXy62Ju-LihXK2RMsjEkDg-EG9T2Z~y4J4PD5zDnBp6rXZtBWVxkOhPZroZbtE7Re~s5JwbnwShGcGD7pUAupfg8-n2ZN4ssSUnU76ydeEN7REE8A2UP4QUNnYxRCkgPDDMFucK1kXKqQpfseRwFh9TvE56E~fm3HT8brUR4rJQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+            "rating":4.5,
+            "name": "Gucci duffle bag",
+            "abate":40,
+            "comment":65,
+            "newPrice":960,
+            "oldPrice":1160,
+            "image": "https://s3-alpha-sig.figma.com/img/4f3c/a1d1/2722dbdf98f25179d3c0b785988c513d?Expires=1703462400&Signature=XknpS6uztl-ZOGLF1fQD2KvQYOHZAj87dh8DdiKDOj98zpEoCAq4R~t4KSK5DYmEYQHcDwCiO5McoNMCO3~kYVBWzQcLhAedOGRhtHTMVeQOvye0LSayns8Ot56qTA2Cu~OIIG3ms3TQ-5T4B-PtwCEPkKI~YffHo64GX-4lSrku8qTv0XwRlPlDUzcviuiNZVdq8hZhHJDF-pQzcQCwhlq-NY6Dv09lfTiVwgFvjrI26dM56R0Xk7lUmhX6JvOKPSODbNf~bx5laEktIgyOcV36UZR14E9T5bYKhnTQcgCHVwCH5mZPi~T~1xtg~-ytKNQurrtnFTgqEyukW8scrQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
         },
         {
             "id": 7,
-            "rating":1.5,
-            "name": "HAVIT HV-G92 Gamepad",
-            "image": "https://s3-alpha-sig.figma.com/img/5d5c/2e52/50752d55f8b60f2aa2923183dadbc135?Expires=1703462400&Signature=nmD~b-XlPbfshO-fIF0sFl4aVMIV-Ves5SN0LmtVbaiNDnDEvIL7LQnJTWpFs8VebB7iaau6vB1QpMoxPwMpUtdE4Duz9mGt81ZMGPyNdDqS6kGxeAPUlIKl3E7kw9EiHjDGiYi5FYGfI9Gb-YnZTy~Q8peV25At0W2dDCW4JSjWXy62Ju-LihXK2RMsjEkDg-EG9T2Z~y4J4PD5zDnBp6rXZtBWVxkOhPZroZbtE7Re~s5JwbnwShGcGD7pUAupfg8-n2ZN4ssSUnU76ydeEN7REE8A2UP4QUNnYxRCkgPDDMFucK1kXKqQpfseRwFh9TvE56E~fm3HT8brUR4rJQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+            "rating":4.5,
+            "name": "RGB liquid CPU Cooler",
+            "abate":40,
+            "comment":90,
+            "newPrice":160,
+            "oldPrice":170,
+            "image": "https://s3-alpha-sig.figma.com/img/6739/d39d/c218c97b645d616c8188a4f2e6aaf84b?Expires=1703462400&Signature=irFqgjxlZYHUr1g3SPD1vkaSUiTwRe~sWFgypPao4~RFUIQrrClzOXlsawykSAt9gBALgYtxLCacNPCxdma8YhOpXbgYqrn56oqJuXhG3i72CKAI6kkDT5-FVOVKav8OkZPL7uVJnmvqhmqC1GVbMCP~HNcHgb7nw84jhw19kDiOKAJgB9zQd0b37cMswIkJZLwJ6hMhrbgvHRLy6clrtYQS0DKZ~jj14WhtCNLFVgnpyQWAG96KkFW01e7vDLp7Ym5uOUjtxmAJ~Veo5Qt1Pp3cl7TXsdddwMpVrtn40KhjjvIecRd0zBHDKenwhAQO2JMJp7X6dKBy77E0i6eE-g__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
         },
         {
             "id": 8,
-            "rating":1,
-            "name": "HAVIT HV-G92 Gamepad",
-            "image": "https://s3-alpha-sig.figma.com/img/5d5c/2e52/50752d55f8b60f2aa2923183dadbc135?Expires=1703462400&Signature=nmD~b-XlPbfshO-fIF0sFl4aVMIV-Ves5SN0LmtVbaiNDnDEvIL7LQnJTWpFs8VebB7iaau6vB1QpMoxPwMpUtdE4Duz9mGt81ZMGPyNdDqS6kGxeAPUlIKl3E7kw9EiHjDGiYi5FYGfI9Gb-YnZTy~Q8peV25At0W2dDCW4JSjWXy62Ju-LihXK2RMsjEkDg-EG9T2Z~y4J4PD5zDnBp6rXZtBWVxkOhPZroZbtE7Re~s5JwbnwShGcGD7pUAupfg8-n2ZN4ssSUnU76ydeEN7REE8A2UP4QUNnYxRCkgPDDMFucK1kXKqQpfseRwFh9TvE56E~fm3HT8brUR4rJQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-        },
-        {
-            "id": 9,
-            "rating":4,
-            "name": "HAVIT HV-G92 Gamepad",
-            "image": "https://s3-alpha-sig.figma.com/img/5d5c/2e52/50752d55f8b60f2aa2923183dadbc135?Expires=1703462400&Signature=nmD~b-XlPbfshO-fIF0sFl4aVMIV-Ves5SN0LmtVbaiNDnDEvIL7LQnJTWpFs8VebB7iaau6vB1QpMoxPwMpUtdE4Duz9mGt81ZMGPyNdDqS6kGxeAPUlIKl3E7kw9EiHjDGiYi5FYGfI9Gb-YnZTy~Q8peV25At0W2dDCW4JSjWXy62Ju-LihXK2RMsjEkDg-EG9T2Z~y4J4PD5zDnBp6rXZtBWVxkOhPZroZbtE7Re~s5JwbnwShGcGD7pUAupfg8-n2ZN4ssSUnU76ydeEN7REE8A2UP4QUNnYxRCkgPDDMFucK1kXKqQpfseRwFh9TvE56E~fm3HT8brUR4rJQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+            "rating":5,
+            "name": "Small BookSelf",
+            "abate":40,
+            "comment":65,
+            "newPrice":360,
+            "oldPrice":2,
+            "image": "https://s3-alpha-sig.figma.com/img/e86f/6e87/2757d20a14861e2e0ebd4e9889693f59?Expires=1703462400&Signature=a630duB~VCpzNgI4lmGTycV5aUPnsLI4JY1aBaXJoAC9RCqghgGNAQbfCJ8wC98F5MTD8beMRkUBXFn~YgelCI-6oSc9apAh~jOQ9cL7av1J7duBAFltA7eZKoT4uue~jPkD-hON50AZHDixLk2x8~0bfnpBiMHTuWTwqf1EFabz4iuLFeXEEvtm11nRbv0rUkOABAbneZobhoLj7HdLw51VVi9iqRv6hlijJF1lQlrWF9E5fmeQXD7OFrRUz0TdI~01U20sXcpfhm52Kqd2RhGX~TZekoonuyami2iOATuTkrRX1rLEikM8sKxQR9xfVaWPrxkaImkZCNwyOVkGBA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
         }
     ]
 }

@@ -1,0 +1,82 @@
+@mixin MyFlex() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+#browseCategorySection{
+    padding:0px 20px 0px 100px;
+    width: 100%;
+    height: 70vh;
+    .browseCategoryUpBox{
+        margin-bottom: 50px;
+        width: 100%;
+        height: 20vh;
+        .todaysText{
+            width: 200px;
+            display: flex;
+            gap: 10px;
+            @include MyFlex();
+            justify-content: start;
+            p{
+                font-size: 27px;
+                color: #DB4444;
+            }
+        }
+        .normalBox{
+            background-color: #DB4444;
+            width: 40px;
+            height: 80px;
+            border-radius: 7px;
+        }
+        .salesTimer{
+            // width: 300px;
+            display: flex;
+            font-size: 30px;
+            gap:50px;
+            @include MyFlex();
+            margin-top: 30px;
+            justify-content: start;
+        }
+    }
+    .browseCategoryDownBox{
+        padding: 0px 0px 100px;
+        border-bottom: 1px solid gray;
+        cursor: pointer;
+        .swiper {
+            width: 100%;
+            height: 230px;
+            .swiperInBox{
+                @include MyFlex();
+                flex-direction: column;
+                border: 1px solid gray;
+                width: 100%;
+                height: 100%;
+                font-size: 100px;
+                border-radius: 5px;
+                p{
+                    margin-top: 10px;
+                    font-size: 20px;
+                }
+            }
+          }
+          
+    .swiper-pagination-bullet {
+        opacity: 0;
+    }
+    }
+  
+//   .swiper-slide {
+//     text-align: center;
+//     font-size: 18px;
+//     background: #fff;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//   }
+  
+  
+}

@@ -5,6 +5,9 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 import axios from 'axios';
+import { IoIosHeartEmpty } from "react-icons/io";
+import { FaRegEye } from "react-icons/fa";
+import Timer from '../Time/iindex';
 
 function FlashSalesSection() {
     const [card, setCard] = useState([])
@@ -42,6 +45,16 @@ function FlashSalesSection() {
 
     return (
         <section id='flashSalesSection'>
+            <div className="flashSalesUpBox">
+                <div className="todaysText">
+                    <div className='normalBox'></div>
+                    <p>Today’s</p>
+                </div>
+                <div className='salesTimer'>
+                    <h1>Flash Sales</h1>
+                <Timer/>
+                </div>
+            </div>
             <Swiper
                 slidesPerView={5}
                 // spaceBetween={30}
@@ -57,22 +70,34 @@ function FlashSalesSection() {
                             <div className='card'>
                                 <div className='cardImage'>
                                     <img src={item.image} alt="" />
+                                    <div className="imgHoverBasketCard">
+                                       <button>Add to card</button>
+                                    </div>
+                                    <div className='ProductAdeteAndBtns'>
+                                        <div className="abateBox">-{item.abate}%</div>
+                                       <div className="cardBtns">
+                                       <button><IoIosHeartEmpty /></button>
+                                        <button><FaRegEye  /></button>
+                                       </div>
+                                    </div>
                                 </div>
-                                <div className='cardText'>a
+                                <div className='cardText'>
+                                    <h3>{item.name}</h3>
+                                    <p className='price'>${item.newPrice} <span>${item.oldPrice}</span></p>
                                     <p>
                                         {handleRating(item.rating).map(x => {
                                             if (x === 1) {
-                                                return <i class="fa-solid fa-star"></i>
+                                                return <i class="fa-solid fa-star" style={{color:"#FFAD33"}}></i>
                                             }
                                             else if (x === 2) {
-                                                return <i class="fa-regular fa-star-half-stroke"></i>
+                                                return <i class="fa-regular fa-star-half-stroke" style={{color:"#ffAD33"}}></i>
                                             }
-                                            return <i class="fa-regular fa-star"></i>
+                                            return <i class="fa-regular fa-star"style={{color:"gray"}}></i>
 
                                         })}
 
 
-
+                                        <span>({item.comment})</span>
                                     </p>
 
                                 </div>
@@ -82,13 +107,9 @@ function FlashSalesSection() {
                     </>
                 ))}
             </Swiper>
-
-
-
-
-
-
-
+            <div className='flashSalesDownBox'>
+                <button>View All Products</button>
+            </div>
         </section>
     )
 }
