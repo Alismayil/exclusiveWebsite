@@ -1,0 +1,214 @@
+@mixin MyFlex() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+
+#bestSellingSection{
+    width: 100%;
+    height: 160vh;
+    padding: 0px 100px;
+    .browseCategoryUpBox{
+        margin-bottom: 50px;
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        justify-content: space-between;
+        .bestSellingTextBOx{
+            .todaysText{
+            width: 200px;
+            display: flex;
+            gap: 10px;
+            @include MyFlex();
+            justify-content: start;
+            p{
+                font-size: 27px;
+                color: #DB4444;
+            }
+        }
+        .normalBox{
+            background-color: #DB4444;
+            width: 40px;
+            height: 80px;
+            border-radius: 7px;
+        }
+        .salesTimer{
+            // width: 300px;
+            display: flex;
+            font-size: 30px;
+            gap:50px;
+            @include MyFlex();
+            margin-top: 30px;
+            justify-content: start;
+        }
+        }
+        .bestSellingBtnBox{
+            width: 20%;
+            height: 100%;
+            display: flex;
+                align-items: end;
+                justify-content: end;
+            .bestSellingBtn{
+                background-color: #DB4444;
+                width: 180px;
+                height: 60px;
+                border-radius: 5px;
+                @include MyFlex();
+                p{
+                    font-size: 20px;
+                    color: white;
+                }
+            }
+        }
+    }
+    .bestSellingDown{
+        margin-bottom: 150px;
+        width: 100%;
+        height: 43.8vh;
+        margin-top: 80px;
+        .mySwiper2 {
+            .card {
+                width: 80%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+    
+                .cardImage {
+    
+                    background-color: #F5F5F5;
+                    height: 70%;
+                    position: relative;
+                    @include MyFlex();
+    
+                    .imgHoverBasketCard {
+                        background-color: black;
+                        width: 100%;
+                        height: 50px;
+                        position: absolute;
+                        bottom: 0;
+                        opacity: 0;
+                        transition: 0.3s;
+                        @include MyFlex();
+                        cursor: pointer;
+    
+                        button{
+                            background-color: transparent;
+                            font-size: 22px;
+                            color: white;
+                            border: none;
+                        cursor: pointer;
+    
+                        }
+    
+                    }
+    
+                    .ProductAdeteAndBtns {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 70%;
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 10px 10px;
+    
+                        .cardBtns {
+                            display: flex;
+                            flex-direction: column;
+                            width: 50px;
+                            height: 100px;
+                            gap: 10px;
+                            @include MyFlex();
+    
+                            button {
+                                background-color: white;
+                                cursor: pointer;
+    
+                                @include MyFlex();
+                                width: 40px;
+                                height: 40px;
+                                border-radius: 50%;
+                                border: none;
+                                font-size: 25px
+                            }
+                        }
+    
+                        .abateBox {
+                            @include MyFlex();
+                            background-color: #DB4444;
+                            width: 70px;
+                            height: 35px;
+                            border-radius: 7px;
+                            color: white;
+                        }
+                    }
+    
+                    img {
+                        max-width: 180px;
+                        max-height: 180px;
+                    }
+                }
+                .cardImage:hover{
+                    .imgHoverBasketCard{
+                        opacity: 1;
+                        transition: 0.3s;
+                        transform: translateY(-10px);
+                    }
+                }
+    
+                .cardText {
+                    width: 100%;
+                    height: 30%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: start;
+                    gap: 10px;
+    
+                    .price {
+                        color: #DB4444;
+    
+                        span {
+                            text-decoration: line-through;
+                            color: gray;
+                            margin-left: 10px;
+                        }
+                    }
+    
+                    span {
+                        color: gray;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    
+        .swiper {
+            width: 100%;
+            height: 380px;
+        }
+    
+        .swiper-slide {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            font-size: 18px;
+            background-color: white;
+    
+    
+            /* Center slide text vertically */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .swiper-pagination-bullet {
+            opacity: 0;
+        }
+    }
+}

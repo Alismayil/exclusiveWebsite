@@ -26,7 +26,7 @@ function BrowseCategorySection() {
                 <div className='salesTimer'>
                     <h1>Browse By Category</h1>
                 </div>
-            </div>
+    </div>
 <div className='browseCategoryDownBox'>
 <Swiper
         slidesPerView={6}
