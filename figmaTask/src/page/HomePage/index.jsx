@@ -4,6 +4,7 @@ import FlashSalesSection from '../../components/FlashSalesSection'
 import BrowseCategorySection from '../../components/BrowseCategorySection'
 import BestSellingSection from '../../components/BestSellingtSection'
 import NewArrival from '../../components/NewArrivalSection'
+import ExploreOurProductSection from '../../components/ExploreOurProductsSection'
 
 function HomePage() {
   return (
@@ -12,6 +13,7 @@ function HomePage() {
       <FlashSalesSection/>
       <BrowseCategorySection/>
       <BestSellingSection/>
+      <ExploreOurProductSection/>
       <NewArrival/>
     </div>
   )

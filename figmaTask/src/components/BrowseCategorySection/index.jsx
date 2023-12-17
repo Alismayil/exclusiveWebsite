@@ -16,9 +16,9 @@ import { IoMdLaptop } from "react-icons/io";
 import { MdOutlineSpeaker } from "react-icons/md";
 
 function BrowseCategorySection() {
-  return (
-    <section id='browseCategorySection'>
-   <div className="browseCategoryUpBox">
+    return (
+        <section id='browseCategorySection'>
+            <div className="browseCategoryUpBox">
                 <div className="todaysText">
                     <div className='normalBox'></div>
                     <p>Categories</p>
@@ -26,82 +26,82 @@ function BrowseCategorySection() {
                 <div className='salesTimer'>
                     <h1>Browse By Category</h1>
                 </div>
-    </div>
-<div className='browseCategoryDownBox'>
-<Swiper
-        slidesPerView={6}
-        spaceBetween={30}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[Pagination]}
-        className="mySwiper"
-      >
-        <SwiperSlide>
-            <div className='swiperInBox'>
-            <IoIosPhonePortrait />
-            <p>Phones</p>
             </div>
-        </SwiperSlide>
-        <SwiperSlide>
-            <div className='swiperInBox'>
-            <HiOutlineDesktopComputer  />
-            <p>Computers</p>
+            <div className='browseCategoryDownBox'>
+                <Swiper
+                    slidesPerView={6}
+                    spaceBetween={30}
+                    pagination={{
+                        clickable: true,
+                    }}
+                    modules={[Pagination]}
+                    className="mySwiper"
+                >
+                    <SwiperSlide>
+                        <div className='swiperInBox'>
+                            <IoIosPhonePortrait />
+                            <p>Phones</p>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className='swiperInBox'>
+                            <HiOutlineDesktopComputer />
+                            <p>Computers</p>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className='swiperInBox'>
+                            <IoWatchOutline onePortrait />
+                            <p>SmartWatch</p>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className='swiperInBox' style={{ backgroundColor: "#DB4444", color: "white" }}>
+                            <FiCamera Portrait />
+                            <p>Camera</p>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className='swiperInBox'>
+                            <PiHeadphones />
+                            <p>HeadPhones</p>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className='swiperInBox'>
+                            <LuGamepad />
+                            <p>Gaming</p>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className='swiperInBox'>
+                            <GoTools />
+                            <p>Electronic Tools</p>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className='swiperInBox'>
+                            <FaTabletAlt />
+                            <p>Tablet</p>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className='swiperInBox'>
+                            <IoMdLaptop />
+                            <p>Laptop</p>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className='swiperInBox'>
+                            <MdOutlineSpeaker />
+                            <p>Speaker</p>
+                        </div>
+                    </SwiperSlide>
+                </Swiper>
             </div>
-        </SwiperSlide>
-        <SwiperSlide>
-            <div className='swiperInBox'>
-            <IoWatchOutline  onePortrait />
-            <p>SmartWatch</p>
-            </div>
-        </SwiperSlide>
-        <SwiperSlide>
-            <div className='swiperInBox' style={{backgroundColor:"#DB4444", color:"white"}}>
-            <FiCamera  Portrait />
-            <p>Camera</p>
-            </div>
-        </SwiperSlide>
-        <SwiperSlide>
-            <div className='swiperInBox'>
-            <PiHeadphones  />
-            <p>HeadPhones</p>
-            </div>
-        </SwiperSlide>
-        <SwiperSlide>
-            <div className='swiperInBox'>
-            <LuGamepad  />
-            <p>Gaming</p>
-            </div>
-        </SwiperSlide>
-        <SwiperSlide>
-            <div className='swiperInBox'>
-            <GoTools  />
-            <p>Electronic Tools</p>
-            </div>
-        </SwiperSlide>
-        <SwiperSlide>
-            <div className='swiperInBox'>
-            <FaTabletAlt  />
-            <p>Tablet</p>
-            </div>
-        </SwiperSlide>
-        <SwiperSlide>
-            <div className='swiperInBox'>
-            <IoMdLaptop  />
-            <p>Laptop</p>
-            </div>
-        </SwiperSlide>
-        <SwiperSlide>
-            <div className='swiperInBox'>
-            <MdOutlineSpeaker  />
-            <p>Speaker</p>
-            </div>
-        </SwiperSlide>
-      </Swiper>
-</div>
 
-    </section>
-  )
+        </section>
+    )
 }
 
 export default BrowseCategorySection

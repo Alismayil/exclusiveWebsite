@@ -1,0 +1,139 @@
+@mixin MyFlex() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#account {
+    padding: 0px 100px;
+    width: 100%;
+    height: 90vh;
+
+    .accountUp {
+        @include MyFlex();
+        justify-content: end;
+        padding: 50px 200px 10px;
+        height: 5%;
+    }
+
+    .accountDown {
+        margin-top: -60px;
+        width: 100%;
+        height: 95%;
+        display: flex;
+
+        .accountDownLeftBox {
+            width: 30%;
+            height: 100%;
+            @include MyFlex();
+
+            ul {
+                list-style: none;
+                padding: 10px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                font-size: 25px;
+
+                li {
+                    margin-left: 50px;
+                    color: gray;
+                }
+
+            }
+        }
+
+        .accountDownRightBox {
+            // background-color: aqua;
+            width: 70%;
+            height: 100%;
+            padding: 160px 100px 0px;
+
+            .downRightUpBox {
+                height: 7%;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                color: #DB4444;
+                margin-bottom: 10px;
+                font-size: 25px;
+            }
+
+            .downRightMiddleBox {
+                display: grid;
+                grid-template-columns: auto auto;
+                width: 100%;
+                height: 35%;
+
+                .accountInputAndTextBox {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    p{
+                        font-size: 22px;
+                    }
+                    input {
+                        font-size: 20px;
+                        border: none;
+                        width: 400px;
+                        height: 60px;
+                        outline: none;
+                        padding: 0px 10px;
+                        background-color: #F5F5F5;
+                    border-radius: 5px;
+
+                    }
+                }
+            }
+
+            .downRightDownBox {
+                width: 100%;
+                height: 37%;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                p{
+                    font-size: 22px;
+                }
+                input {
+                    font-size: 20px;
+                    border: none;
+                    width: 895px;
+                    height: 60px;
+                    outline: none;
+                    padding: 0px 10px;
+                    background-color: #F5F5F5;
+                    border-radius: 5px;
+                }
+            }
+
+            .downRightDownBtnBox {
+                margin-top: 20px;
+                height: 60px;
+                width: 90.5%;
+                display: flex;
+                justify-content: end;
+
+                .cancelBtn {
+                    height: 100%;
+                    width: 100px;
+                    @include MyFlex();
+                    font-size: 22px;
+
+                }
+
+                .saveChangesBtn {
+                    background-color: #DB4444;
+                    width: 400px;
+                    height: 100%;
+                    border-radius: 5px;
+                    color: white;
+                    @include MyFlex();
+                    font-size: 22px;
+
+
+                }
+            }
+        }
+    }
+}

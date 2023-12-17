@@ -1,0 +1,106 @@
+@mixin MyFlex() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// @include MyFlex();
+
+#contactPage{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    padding: 150px 200px;
+    .contactLeftBox{
+        width: 27%;
+        height: 100%;
+        .contactLeftBoxUp, .contactLeftBoxDown{
+            width: 100%;
+            height: 40%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: center;
+            padding: 0px 50px;
+            position: relative;
+            p{
+                font-size: 20px
+            }
+           .underline{
+            background-color: gray;
+            height: 2px;
+            width: 300px;
+            position: absolute;
+            bottom: 0;
+           }
+            .iconAndText{
+                display: flex;
+                gap: 20px;
+                height: 50px;
+                align-items: center;
+                h1{
+                    font-size: 30px;
+                }
+            }
+        }
+        .contactLeftBoxDown{
+            height: 60%;
+        }
+    }
+    .contactRightBox{
+        width: 65%;
+        height: 100%;
+        padding: 50px 0px;
+        position: relative;
+        .contactSmallInputsBox{
+            height: 70px;
+            display: flex;
+            gap: 20px;
+            @include MyFlex();
+            input{
+                font-size: 17px;
+
+                padding: 0px 20px;
+                height: 70%;
+                width: 270px;
+            border-radius: 5px;
+            border: none;
+            background-color: #F5F5F5;
+
+
+            }
+        }
+        .contactBigInputBox{
+            padding: 20px 0px 0px 60px ;
+            height: 60%;
+            input{
+                font-size: 17px;
+            border-radius: 5px;
+
+                width: 850px;
+                height: 90%;
+            border: none;
+                background-color: #F5F5F5;
+                position: relative;
+            }
+            input::placeholder{
+                height: 100%;
+                position: absolute;
+                top: 20px;
+                left: 20px;
+            }
+        }
+        .contactBtn{
+            height: 60px;
+            width: 270px;
+            @include MyFlex();
+            color: white;
+            font-size: 20px;
+            background-color: #DB4444;
+            position: absolute;
+            bottom: 20px;
+            right: 62px;
+            border-radius: 5px;
+        }
+    }
+}

@@ -2,7 +2,7 @@ import React from 'react'
 import './reklam.scss'
 import ReklamTimer from '../ReklamTime'
 import { Link } from 'react-router-dom'
-import ReklamImg from '../../assets/images/reklamImg.png'
+import ReklamImg from '../../images/reklamImg.png'
 
 function Reklam() {
   return (

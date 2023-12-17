@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './time.scss'
+import './time.scss';
 
 class CountdownTimer extends Component {
   constructor(props) {

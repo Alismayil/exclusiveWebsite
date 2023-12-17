@@ -1,0 +1,35 @@
+
+
+#ourStorySection{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    padding: 0px 100px;
+    margin: 150px 0px;
+    .ourSectionLeftBox{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        padding: 0px 100px;
+        h1{
+            font-size: 80px;
+            margin-bottom: 50px;
+        }
+        p{
+            font-size: 23px;
+        }
+    }
+    .ourSectionRightBox{
+        width: 50%;
+        height: 100%;
+        overflow: hidden;
+        border-radius: 5px;
+        img{
+            margin-left: -200px;
+            max-width: 150%;
+        }
+    }
+}

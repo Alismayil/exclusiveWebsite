@@ -49,21 +49,19 @@
     .headerSectionRightBox {
         @include MyFlex();
         width: 70%;
-
         .swiperLeftBox {
             background-color: black;
             width: 50%;
             height: 100%;
             color: white;
-            padding: 20px 20px;
-
+          padding: 0px 100px;
+            @include MyFlex();
+            align-items: start;
+            flex-direction: column;
             .appleLogo {
-                height: 25%;
                 display: flex;
                 display: flex;
                 align-items: center;
-
-
                 img {
                     max-width: 60px;
                 }
@@ -75,10 +73,11 @@
 
             .phoneInform {
                 margin-top: 20px;
-                height: 50%;
                 font-size: 60px;
-                max-width: 63%;
+                
                 p{
+                max-width: 300px;
+                text-align: start;
                     margin-left: -0px;
                 }
             }
@@ -116,8 +115,10 @@
             background-color: black;
             width: 50%;
             height: 100%;
-
+            @include MyFlex();
+            justify-content: start;
             img {
+                margin-top: 60px;
                 max-width: 90%;
             }
         }
@@ -127,9 +128,10 @@
 }
 
 .swiper {
-    width: 1000px;
-    height: 330px;
+    width: 1282px;
+    height: 90%;
     display: flex;
+    margin-top: 40px;
 }
 
 .swiper-slide {
@@ -141,13 +143,12 @@
     align-items: center;
 }
 
-.swiper-slide img {
-    display: block;
-    //  max-width: 100px;
-    object-fit: cover;
-    display: flex;
+// .swiper-slide img {
+//     display: block;
+//     object-fit: cover;
+//     display: flex;
 
-}
+// }
 
 .swiper-pagination-bullet {
     width: 14px !important;

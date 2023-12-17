@@ -1,0 +1,32 @@
+#error{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    h1{
+        font-size: 150px;
+    }
+    p{
+        font-size: 25px;
+    }
+    .errorBtn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        width: 94.4%;
+        button{
+            cursor: pointer;
+            height: 60px;
+            width: 300px;
+            background-color: #DB4444;
+            border: none;
+            color: white;
+            font-size: 20px;
+            border-radius: 7px;
+        }
+    }
+}

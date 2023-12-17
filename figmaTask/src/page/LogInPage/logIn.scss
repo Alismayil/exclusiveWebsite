@@ -1,0 +1,109 @@
+@mixin MyFlex() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+#logIn{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+.signUpLeftBox {
+    width: 60%;
+    height: 100%;
+    @include MyFlex();
+    overflow: hidden;
+    border-radius: 5px;
+
+
+    img {
+        max-width: 130%;
+    }
+}
+
+.signUpRightBox {
+    height: 100%;
+    width: 40%;
+    @include MyFlex();
+    flex-direction: column;
+
+    .logUpBox {
+        width: 55%;
+        height: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        padding: 0px 20px;
+
+        h1 {
+            font-size: 35px;
+        }
+
+        p {
+            margin-top: -10px;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            input {
+                height: 50px;
+                font-size: 18px;
+                background-color: transparent;
+                border: none;
+                border-bottom: 1px solid gray;
+                outline: none;
+            }
+            input::placeholder{
+                color: rgba(128, 128, 128, 0.692);
+            }
+        }
+
+        .logInAndForgotBox{
+            margin-top: 30px;
+            display: flex;
+            @include MyFlex();
+            height: 70px;
+            justify-content: space-between;
+            .logInBox {
+                background-color: #DB4444;
+                width: 45%;
+                height: 80%;
+                @include MyFlex();
+                font-size: 23px;
+                color: white;
+                border-radius: 5px;
+            }
+    
+            .forgetBox {
+                color: #DB4444;
+                width: 45%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 18px;
+            }
+        }
+        
+
+        // .logInBox {
+        //     @include MyFlex();
+        //     color: gray;
+        //     font-size: 18px;
+        //     span{
+        //         color: black;
+        //         text-decoration: underline;
+        //         margin-left: 10px;
+        //     }
+        // }
+    }
+
+}  
+}

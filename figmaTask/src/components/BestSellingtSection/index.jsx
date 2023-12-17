@@ -12,7 +12,7 @@ import Reklam from '../Reklam';
 
 function BestSellingSection() {
     const [card, setCard] = useState([])
-    const baseUrl = 'http://localhost:3000/exclusive'
+    const baseUrl = 'http://localhost:4000/selling/'
 
     async function fetchData() {
         const res = await axios.get(`${baseUrl}`)

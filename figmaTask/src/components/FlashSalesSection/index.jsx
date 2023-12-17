@@ -11,7 +11,8 @@ import Timer from '../Time/iindex';
 
 function FlashSalesSection() {
     const [card, setCard] = useState([])
-    const baseUrl = 'http://localhost:3000/exclusive'
+    
+    const baseUrl = 'http://localhost:4000/flash'
 
     async function fetchData() {
         const res = await axios.get(`${baseUrl}`)
@@ -22,6 +23,7 @@ function FlashSalesSection() {
         fetchData()
     }, [])
 
+    console.log(card);
     function handleRating(rating) {
         const arr = []
         const isQaliq = rating % 1
