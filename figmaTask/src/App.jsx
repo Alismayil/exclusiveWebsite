@@ -10,6 +10,9 @@ import ErrorPage from './page/ErrorPage';
 import Footer from './layout/Footer';
 import LogIn from './page/LogInPage/idnex';
 import Account from './page/AccountPage';
+import { BasketPage } from './toolkit/BasketRedux/basket';
+import { WishlistPage } from './toolkit/WishlistRedux/wishlist';
+import CheckOutPage from './page/CheckOutPage';
 
 function App() {
 
@@ -25,6 +28,9 @@ function App() {
         <Route path="/*" element={<ErrorPage/>} /> 
         <Route path="/logIn" element={<LogIn/>} /> 
         <Route path="/account" element={<Account/>} /> 
+        <Route path="/basket" element={<BasketPage/>} /> 
+        <Route path="/wishlist" element={<WishlistPage/>} /> 
+        <Route path="/checkOut" element={<CheckOutPage/>} /> 
       </Routes>
    </BrowserRouter>
    <Footer/>

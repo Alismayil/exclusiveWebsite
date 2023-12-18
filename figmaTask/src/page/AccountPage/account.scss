@@ -29,15 +29,17 @@
 
             ul {
                 list-style: none;
-                padding: 10px;
+                padding: 20px;
                 display: flex;
                 flex-direction: column;
                 gap: 10px;
                 font-size: 25px;
 
                 li {
-                    margin-left: 50px;
+                    margin-left: 60px;
                     color: gray;
+                    font-size: 20px;
+
                 }
 
             }
@@ -55,7 +57,7 @@
                 display: flex;
                 align-items: center;
                 color: #DB4444;
-                margin-bottom: 10px;
+                margin-bottom: 40px;
                 font-size: 25px;
             }
 
@@ -73,7 +75,7 @@
                         font-size: 22px;
                     }
                     input {
-                        font-size: 20px;
+                        font-size: 15px;
                         border: none;
                         width: 400px;
                         height: 60px;
@@ -96,7 +98,7 @@
                     font-size: 22px;
                 }
                 input {
-                    font-size: 20px;
+                    font-size: 15px;
                     border: none;
                     width: 895px;
                     height: 60px;

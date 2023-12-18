@@ -1,25 +1,33 @@
 import React, { useEffect, useState } from 'react'
-import './flashSales.scss'
+import { useSelector, useDispatch } from 'react-redux'
+import './wishlist.scss'
+import { basketAdd } from '../BasketRedux/basketSlice';
+import { wihlistDelete } from '../WishlistRedux/wishlistSlices';
+import { GoTrash } from "react-icons/go";
+import { IoCartOutline } from "react-icons/io5";
+import { useNavigate } from 'react-router-dom';
+
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 import axios from 'axios';
+import { IoIosHeartEmpty } from "react-icons/io";
 import { FaRegEye } from "react-icons/fa";
-import Timer from '../Time/iindex';
-import { basketAdd } from '../../toolkit/BasketRedux/basketSlice';
-import { useDispatch, useSelector } from 'react-redux'
 import { wihlsitAdd } from '../../toolkit/WishlistRedux/wishlistSlices';
-import { FaHeart } from "react-icons/fa6";
-import { FaRegHeart } from "react-icons/fa6";
 
 
-function FlashSalesSection() {
+
+export function WishlistPage() {
+    const WishlistArr = useSelector((state) => state.wishlist.value)
+    const dispatch = useDispatch()
+    const navigate=useNavigate()
+
     const [card, setCard] = useState([])
     
 
-    const wishlistArr = useSelector((state) => state.wishlist.value)
-    const dispatch=useDispatch()
+    // const basketArr = useSelector((state) => state.basket.value)
 
 
     const baseUrl = 'http://localhost:4000/flash'
@@ -54,22 +62,57 @@ function FlashSalesSection() {
         }
         return arr
     }
-
-
-
-
-
+  
     return (
-        <section id='flashSalesSection'>
+        <section id='wishlistPage'>
+            <div className="wishlistUpBox">
+                <div className="wishlistCountBox">
+                  <div className="wishlistCount" style={{border:"none" , justifyContent:"start",fontSize:"26px"}}>
+                  Wishlist ({WishlistArr.length})
+                  </div>
+                  <div className="moveBagBox"  onClick={()=>navigate("/")}>
+                  Move All To Bag
+                  </div>
+                </div>
+                <div className="wishlistCardBox">
+                {
+                        WishlistArr && WishlistArr.map((item)=>(
+                            <div className='wishlistCard'>
+                                <div className='cardImage'>
+                                    <img src={item.image} alt="" />
+                                    <div className="imgHoverBasketCard" onClick={()=>dispatch(basketAdd(item))}>
+                                       <button ><IoCartOutline style={{fontSize:"25px"}} />Add to card</button>
+                                    </div>
+                                    <div className='ProductAdeteAndBtns'>
+                                        <div className="abateBox">-{item.abate}%</div>
+                                       <div className="cardBtns">
+                                       <button onClick={()=>dispatch(wihlistDelete(item))}>
+                                       <GoTrash  />
+                                        </button>
+                                       </div>
+                                    </div>
+                                </div>
+                                <div className='cardText'>
+                                    <h3>{item.name}</h3>
+                                    <p className='price'>${item.newPrice} </p>
+                                   
+
+                                </div>
+                            </div> 
+                        ))
+                    }
+                </div>
+            </div>
+            <div className="wishlistDownBox">
             <div className="flashSalesUpBox">
                 <div className="todaysText">
                     <div className='normalBox'></div>
-                    <p>Today’s</p>
+                    <p>Just For You</p>
+                   
                 </div>
-                <div className='salesTimer'>
-                    <h1>Flash Sales</h1>
-                <Timer/>
-                </div>
+                <div className="seeAllBtn">
+                        <p>See All</p>
+                    </div>
             </div>
             <Swiper
                 slidesPerView={5}
@@ -86,14 +129,11 @@ function FlashSalesSection() {
                                 <div className='cardImage'>
                                     <img src={item.image} alt="" />
                                     <div className="imgHoverBasketCard" onClick={()=>dispatch(basketAdd(item))}>
-                                       <button >Add to card</button>
+                                       <button ><IoCartOutline style={{fontSize:"25px"}} />Add to card</button>
                                     </div>
                                     <div className='ProductAdeteAndBtns'>
                                         <div className="abateBox">-{item.abate}%</div>
                                        <div className="cardBtns">
-                                       <button onClick={()=>dispatch(wihlsitAdd(item))}>
-                                        {wishlistArr.find(x=>x._id === item._id)? <FaHeart style={{color:"#DB4444"}} /> : <FaRegHeart />}
-                                        </button>
                                         <button><FaRegEye  /></button>
                                        </div>
                                     </div>
@@ -124,11 +164,19 @@ function FlashSalesSection() {
                     </>
                 ))}
             </Swiper>
-            <div className='flashSalesDownBox'>
-                <button>View All Products</button>
             </div>
-        </section>
+            {/* <button onClick={()=>dispatch(wihlistDeleteAll())}>alldelete</button>
+           <p>{WishlistArr.length}</p>
+            <div>
+                {
+                    WishlistArr && WishlistArr.map((item) =>
+                    <>
+                     <p>{item.name}</p>
+                     <button onClick={()=>dispatch(wihlistDelete(item))}>delete</button>
+                    <button onClick={()=>dispatch(basketAdd(item))}>Add basket</button>
+                    </>
+    )}
+            </div> */}
+        </section>  
     )
 }
-
-export default FlashSalesSection

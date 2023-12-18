@@ -3,9 +3,14 @@ import './navbar.scss'
 import { IoIosHeartEmpty } from "react-icons/io";
 import { PiShoppingCartLight } from "react-icons/pi";
 import { IoIosSearch } from "react-icons/io";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import {  useSelector } from 'react-redux'
 
 function Navbar() {
+    const basketArr = useSelector((state) => state.basket.value)
+    const WishlistArr = useSelector((state) => state.wishlist.value)
+
+    const navigate=useNavigate()
   return (
     <nav className='Navbar'>
         <div className="navbarLogo">
@@ -32,8 +37,14 @@ function Navbar() {
             <input type="text" placeholder='What are you looking for?' />
             <button><IoIosSearch /></button>
             </div>
-            <button><IoIosHeartEmpty /></button>
-            <button><PiShoppingCartLight  /></button>
+            <button onClick={()=>navigate("/wishlist")}>
+                <IoIosHeartEmpty />
+           <div className='wishlistCount'>{WishlistArr.length}</div>
+                </button>
+            <button onClick={()=>navigate("/basket")}>
+            <PiShoppingCartLight  />
+            <div className='basketCount'>{basketArr.length}</div>
+            </button>
         </div>
     </nav>
   )
