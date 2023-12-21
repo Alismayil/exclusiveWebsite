@@ -1,0 +1,345 @@
+@mixin MyFlex() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+
+
+.detailPage {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    padding: 0px 100px;
+
+    .detailPageLeftBox {
+        width: 50%;
+        height: 100%;
+        @include MyFlex();
+
+        .smallImgagesBox {
+            width: 30%;
+            height: 90%;
+            @include MyFlex();
+            flex-direction: column;
+            gap: 20px;
+
+            .smallImg {
+                background-color: #F5F5F5;
+                width: 60%;
+                height: 160px;
+                border-radius: 6px;
+
+                @include MyFlex();
+
+                img {
+                    max-width: 100%;
+                    cursor: pointer;
+
+                }
+
+            }
+        }
+
+        .bigImageBox {
+            width: 70%;
+            height: 90%;
+            @include MyFlex();
+
+            .bigImages {
+                background-color: #F5F5F5;
+                border-radius: 6px;
+                width: 100%;
+                height: 95%;
+                @include MyFlex();
+
+                img {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+
+    .detailPageRightBox {
+        width: 50%;
+        height: 100%;
+        @include MyFlex();
+        justify-content: start;
+        padding: 0px 0px 0px 170px;
+
+        .centerBox {
+            width: 70%;
+            border-radius: 6px;
+            height: 85%;
+
+            .upTextBox {
+                width: 100%;
+                height: 35%;
+                border-bottom: 2px solid rgba(128, 128, 128, 0.819);
+                padding: 0px 60px 0px 0px;
+
+                h1 {
+                    font-size: 27px;
+                }
+
+                .raitingBox {
+                    width: 100%;
+                    height: 30px;
+                    display: flex;
+                    gap: 10px;
+                    margin-top: 19px;
+
+                    p {
+                        color: rgba(128, 128, 128, 0.67);
+                        font-size: 17px;
+                    }
+
+                }
+
+                p {
+                    margin: 0px 0px 22px;
+                    font-size: 24px;
+                }
+
+                span {
+                    font-size: 17px;
+                    max-width: 80px;
+                }
+            }
+
+            .downTextBox {
+                width: 100%;
+                height: 35%;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                padding: 0px 60px 0px 0px;
+
+                .colorBox {
+                    width: 100%;
+                    height: 24%;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    p {
+                        font-size: 25px;
+                    }
+
+                    form {
+                        display: flex;
+                        gap: 7px;
+
+                        input {
+                            width: 20px;
+                            height: 20px;
+                            cursor: pointer;
+                        }
+                    }
+
+                }
+
+                .sizeBox {
+                    width: 100%;
+                    height: 24%;
+                    font-size: 27px;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    p {
+                        margin-right: 10px;
+                    }
+
+                    .oneSizeBox {
+                        cursor: pointer;
+                        font-size: 16px;
+                        width: 32px;
+                        height: 32px;
+                        @include MyFlex();
+                        border-radius: 2px;
+                        border: 1px solid gray;
+                        transition: 0.3s;
+
+                    }
+
+                    .oneSizeBox:hover {
+                        transition: 0.3s;
+                        color: white;
+                        background-color: #DB4444;
+                        border: 1px solid #DB4444;
+
+                    }
+                }
+
+                .counterBox {
+                    width: 100%;
+                    height: 25%;
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+
+                    .countBox {
+                        width: 180px;
+                        height: 80%;
+                        border-radius: 3px;
+                        display: flex;
+
+                        .decBox {
+                            height: 100%;
+                            width: 25%;
+                            border: 1px solid gray;
+                            border-bottom-left-radius: 3px;
+                            border-top-left-radius: 3px;
+                            cursor: pointer;
+                            font-size: 40px;
+                            @include MyFlex();
+                            transition: 0.5s;
+
+                            p {
+
+                                position: absolute;
+                                margin-bottom: 40px;
+                            }
+                        }
+
+                        .decBox:hover {
+                            background-color: #DB4444;
+                            color: white;
+                            transition: 0.5s;
+                            border: 1px solid #DB4444;
+
+                        }
+
+                        .numBox {
+                            height: 100%;
+                            width: 50%;
+                            border-top: 1px solid gray;
+                            border-bottom: 1px solid gray;
+                            font-size: 30px;
+                            @include MyFlex();
+
+                        }
+
+                        .incBox {
+                            height: 100%;
+                            width: 25%;
+                            border: 1px solid gray;
+                            border-bottom-right-radius: 3px;
+                            border-top-right-radius: 3px;
+                            cursor: pointer;
+                            font-size: 40px;
+                            @include MyFlex();
+
+
+                        }
+
+                        .incBox:hover {
+                            background-color: #DB4444;
+                            color: white;
+                            transition: 0.5s;
+                            border: 1px solid #DB4444;
+                        }
+                    }
+
+                    .buyBox {
+                        background-color: #DB4444;
+                        width: 180px;
+                        height: 80%;
+                        color: white;
+                        border-radius: 3px;
+                        @include MyFlex();
+                        font-size: 20px;
+                        cursor: pointer;
+
+                    }
+
+                    .likeBox {
+                        width: 50px;
+                        height: 80%;
+                        border-radius: 3px;
+                        @include MyFlex();
+                        font-size: 25px;
+                        border: 1px solid gray;
+                        cursor: pointer;
+
+                    }
+                }
+            }
+
+            .deliveryBox {
+                width: 100%;
+                height: 30%;
+                border-radius: 6px;
+                padding: 0px 60px 0px 0px;
+
+                .deliveryUpBox {
+                    width: 100%;
+                    height: 50%;
+                    border-top-right-radius: 5px;
+                    border-top-left-radius: 5px;
+                    border: 1px solid gray;
+                    display: flex;
+
+                    .deliveryBoxLeftBox {
+                        width: 20%;
+                        height: 100%;
+                        @include MyFlex();
+
+                        img {
+                            width: 40px;
+                        }
+
+                    }
+
+                    .deliveryBoxRightBox {
+                        width: 80%;
+                        height: 100%;
+                        gap: 10px;
+                        @include MyFlex();
+                        flex-direction: column;
+                        align-items: start;
+                        font-size: 20px;
+                        border-radius: 10px;
+                    }
+
+                }
+
+                .deliveryDownBox {
+                    width: 100%;
+                    height: 50%;
+                    border-bottom-right-radius: 5px;
+                    border-bottom-left-radius: 5px;
+                    border: 1px solid gray;
+                    border-top: none;
+                    display: flex;
+                    .deliveryBoxLeftBox {
+                        width: 20%;
+                        height: 100%;
+                        @include MyFlex();
+
+                        img {
+                            width: 40px;
+                        }
+
+                    }
+
+                    .deliveryBoxRightBox {
+                        width: 80%;
+                        height: 100%;
+                        gap: 10px;
+                        @include MyFlex();
+                        flex-direction: column;
+                        align-items: start;
+                        font-size: 20px;
+                        border-radius: 10px;
+                    }
+                }
+
+            }
+        }
+    }
+}

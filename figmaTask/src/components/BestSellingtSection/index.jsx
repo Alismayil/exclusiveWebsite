@@ -6,12 +6,22 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 import axios from 'axios';
-import { IoIosHeartEmpty } from "react-icons/io";
 import { FaRegEye } from "react-icons/fa";
 import Reklam from '../Reklam';
+import { FaHeart } from "react-icons/fa6";
+import { FaRegHeart } from "react-icons/fa6";
+import { wihlsitAdd } from '../../toolkit/WishlistRedux/wishlistSlices';
+import { useDispatch, useSelector } from 'react-redux';
+import { basketAdd } from '../../toolkit/BasketRedux/basketSlice';
 
 function BestSellingSection() {
     const [card, setCard] = useState([])
+
+
+    const wishlistArr = useSelector((state) => state.wishlist.value)
+    const basketArr = useSelector((state) => state.basket.value)
+    const dispatch=useDispatch()
+
     const baseUrl = 'http://localhost:4000/selling/'
 
     async function fetchData() {
@@ -78,13 +88,17 @@ function BestSellingSection() {
                             <div className='card'>
                                 <div className='cardImage'>
                                     <img src={item.image} alt="" />
-                                    <div className="imgHoverBasketCard">
-                                       <button>Add to card</button>
+                                    <div className="imgHoverBasketCard" onClick={()=>dispatch(basketAdd(item))}>
+                                       <button >Add to card</button>
                                     </div>
                                     <div className='ProductAdeteAndBtns'>
                                         <div className="abateBox">-{item.abate}%</div>
                                        <div className="cardBtns">
-                                       <button><IoIosHeartEmpty /></button>
+                                       <button onClick={()=>dispatch(wihlsitAdd(item))}>
+                                        {
+                                            wishlistArr.find(x=>x._id === item._id) ? <FaHeart style={{color:"#DB4444"}} /> : <FaRegHeart />
+                                        }
+                            </button>
                                         <button><FaRegEye  /></button>
                                        </div>
                                     </div>

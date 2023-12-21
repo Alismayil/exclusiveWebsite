@@ -18,8 +18,8 @@ function SignUpPage() {
             <input type="email" placeholder='Email or Phone Number' />
             <input type="password" placeholder='Password' />
           </form>
-          <div className="crateAccountBtn">
-          <Link to={"/account"} style={{textDecoration:"none", color:"white"}}>Create Account</Link>
+          <div className="crateAccountBtn" style={{cursor:"pointer"}}>
+          Create Account
           </div>
           <div className="signUpGoogle">
             <img src={GoogleIcon} alt="" />

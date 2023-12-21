@@ -42,6 +42,8 @@
     }
     .reklamBtnBox{
         .reklamBtn{
+          transition: 0.5s;
+
           background-color: #0F6;
           height: 50px;
           width: 150px;
@@ -50,6 +52,10 @@
           p{
             color: white;
           }
+        }
+        .reklamBtn:hover{
+          transition: 0.5s;
+          background-color: #ed6060;
         }
     }
   }

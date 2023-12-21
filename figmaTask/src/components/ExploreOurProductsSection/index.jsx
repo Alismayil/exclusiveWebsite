@@ -8,12 +8,21 @@ import { Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import './exploreOurProductSection.scss';
 import { Link } from "react-router-dom";
+import { useDispatch, useSelector } from 'react-redux';
+import { basketAdd } from '../../toolkit/BasketRedux/basketSlice';
+import { wihlsitAdd } from '../../toolkit/WishlistRedux/wishlistSlices';
+import { FaHeart } from "react-icons/fa6";
+import { FaRegHeart } from "react-icons/fa6";
 
 function ExploreOurProductSection() {
     const [card, setCard] = useState([])
     const [cardTwo, setCardTwo] = useState([])
     const baseUrl = 'http://localhost:4000/exploreOne'
     const baseUrlTwo = 'http://localhost:4000/exploreTwo'
+
+    const basketArr=useSelector(state=>state.basket.value)
+    const wishlistArr=useSelector(state=>state.wishlist.value)
+    const dispatch=useDispatch()
 
     async function fetchData() {
         const res = await axios.get(`${baseUrl}`)
@@ -80,13 +89,17 @@ function ExploreOurProductSection() {
                             <div className='card'>
                                 <div className='cardImage'>
                                     <img src={item.image} alt="" />
-                                    <div className="imgHoverBasketCard">
-                                       <button>Add to card</button>
+                                    <div className="imgHoverBasketCard" onClick={()=>dispatch(basketAdd(item))}>
+                                       <button >Add to card</button>
                                     </div>
                                     <div className='ProductAdeteAndBtns'>
                                         <div className="abateBox" style={{opacity:"0"}}></div>
                                        <div className="cardBtns">
-                                       <button><IoIosHeartEmpty /></button>
+                                       <button onClick={()=>dispatch(wihlsitAdd(item))}>
+                                       {
+                                        wishlistArr.find(x=>x._id === item._id) ? <FaHeart style={{color:"#DB4444"}} /> : <FaRegHeart />
+                                       }
+                                        </button>
                                         <button><FaRegEye  /></button>
                                        </div>
                                     </div>
@@ -135,13 +148,17 @@ function ExploreOurProductSection() {
                             <div className='card'>
                                 <div className='cardImage'>
                                     <img src={item.image} alt="" />
-                                    <div className="imgHoverBasketCard">
+                                    <div className="imgHoverBasketCard"  onClick={()=>dispatch(basketAdd(item))}>
                                        <button>Add to card</button>
                                     </div>
                                     <div className='ProductAdeteAndBtns'>
                                         <div className="abateBox" style={{opacity:"0"}}></div>
                                        <div className="cardBtns">
-                                       <button><IoIosHeartEmpty /></button>
+                                       <button onClick={()=>dispatch(wihlsitAdd(item))}>  
+                                       {
+                                        wishlistArr.find(x=>x._id === item._id) ? <FaHeart style={{color:"#DB4444"}} /> : <FaRegHeart />
+                                       }
+                                       </button>
                                         <button><FaRegEye  /></button>
                                        </div>
                                     </div>

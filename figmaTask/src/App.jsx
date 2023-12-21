@@ -13,6 +13,7 @@ import Account from './page/AccountPage';
 import { BasketPage } from './toolkit/BasketRedux/basket';
 import { WishlistPage } from './toolkit/WishlistRedux/wishlist';
 import CheckOutPage from './page/CheckOutPage';
+import DetailPage from './page/DetailPage';
 
 function App() {
 
@@ -31,6 +32,7 @@ function App() {
           <Route path="/basket" element={<BasketPage />} />
           <Route path="/wishlist" element={<WishlistPage />} />
           <Route path="/checkOut" element={<CheckOutPage />} />
+          <Route path="/detail/:_id" element={<DetailPage />} />
         </Routes>
       </BrowserRouter>
       <Footer />

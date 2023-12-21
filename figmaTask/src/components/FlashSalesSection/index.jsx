@@ -12,6 +12,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { wihlsitAdd } from '../../toolkit/WishlistRedux/wishlistSlices';
 import { FaHeart } from "react-icons/fa6";
 import { FaRegHeart } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
 
 
 function FlashSalesSection() {
@@ -35,6 +36,7 @@ function FlashSalesSection() {
 
 
     console.log(card);
+    
     function handleRating(rating) {
         const arr = []
         const isQaliq = rating % 1
@@ -94,7 +96,9 @@ function FlashSalesSection() {
                                        <button onClick={()=>dispatch(wihlsitAdd(item))}>
                                         {wishlistArr.find(x=>x._id === item._id)? <FaHeart style={{color:"#DB4444"}} /> : <FaRegHeart />}
                                         </button>
-                                        <button><FaRegEye  /></button>
+                                     <Link to={`/detail/${item._id}`}>
+                                     <button><FaRegEye  /></button>
+                                     </Link>
                                        </div>
                                     </div>
                                 </div>

@@ -17,6 +17,10 @@ const FlashSchema = new Schema({
     abate: { type: Number },
     name: { type: String },
     image: { type: String },
+    smallImg1: { type: String },
+    smallImg2: { type: String },
+    smallImg3: { type: String },
+    smallImg4: { type: String },
    
 }, { timestamps: true });
 const Flash = mongoose.model('Flash', FlashSchema);
