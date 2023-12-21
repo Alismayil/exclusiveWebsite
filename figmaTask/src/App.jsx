@@ -1,6 +1,6 @@
 
 import './App.css'
-import {BrowserRouter ,Routes , Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from './layout/Navbar';
 import HomePage from './page/HomePage'
 import ContactPage from './page/ContactPage'
@@ -17,24 +17,24 @@ import CheckOutPage from './page/CheckOutPage';
 function App() {
 
   return (
-   <>
-   <BrowserRouter>
-   <Navbar/>
-   <Routes>
-        <Route path="/" element={<HomePage />}/> 
-        <Route path="/contact" element={<ContactPage/>} /> 
-        <Route path="/about" element={<AboutPage/>} /> 
-        <Route path="/signUp" element={<SignUpPage/>} /> 
-        <Route path="/*" element={<ErrorPage/>} /> 
-        <Route path="/logIn" element={<LogIn/>} /> 
-        <Route path="/account" element={<Account/>} /> 
-        <Route path="/basket" element={<BasketPage/>} /> 
-        <Route path="/wishlist" element={<WishlistPage/>} /> 
-        <Route path="/checkOut" element={<CheckOutPage/>} /> 
-      </Routes>
-   </BrowserRouter>
-   <Footer/>
-   </>
+    <>
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/signUp" element={<SignUpPage />} />
+          <Route path="/*" element={<ErrorPage />} />
+          <Route path="/logIn" element={<LogIn />} />
+          <Route path="/account" element={<Account />} />
+          <Route path="/basket" element={<BasketPage />} />
+          <Route path="/wishlist" element={<WishlistPage />} />
+          <Route path="/checkOut" element={<CheckOutPage />} />
+        </Routes>
+      </BrowserRouter>
+      <Footer />
+    </>
   )
 }
 

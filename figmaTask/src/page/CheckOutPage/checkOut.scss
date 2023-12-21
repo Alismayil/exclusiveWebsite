@@ -1,5 +1,176 @@
+@mixin MyFlex() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
 #checkOutPage{
-    background-color: red;
+    // background-color: red;
     width: 100%;
-    height: 100vh;
+    min-height: 90vh;
+    display: flex;
+    padding: 0px 100px;
+    .checkOutPageLeftBox{
+        // background-color: green;
+        width: 50%;
+        // height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+            // @include MyFlex();
+            // flex-direction: column;
+            h1{
+                margin-left: -220px;
+                margin-bottom: 20px;
+                font-size: 30px;
+            }
+            .inputName{
+                p{
+                    color: gray;
+                }
+                input{
+                    margin: 10px 0px 20px;
+                    height: 40px;
+                    width: 400px;
+                    border: none;
+                    outline: none;
+                    padding: 0px 10px;
+                    background-color: #F5F5F5;
+                }
+            }
+        
+        .checkBoxDiv{
+            display: flex;
+            gap: 10px;
+            input{
+                width: 20px;
+                height: 20px;
+                accent-color: #DB4444;
+            }
+            p{
+                font-size: 18px;
+            }
+           
+        }
+    }
+    .checkOutPageRightBox{
+        // background-color: yellowgreen;
+        width: 50%;
+        // height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .boxUp{
+            width: 500px;
+            // height: 200px;
+            .checkOutCard{
+                display: flex;
+                width: 100%;
+                height: 90px;
+                .checkOutCardImgBox{
+                    height: 100%;
+                    width: 20%;
+                    @include MyFlex();
+
+                    img{
+                        max-width: 80px;
+                    }
+                }
+                .checkOutCardNameBox{
+                    height: 100%;
+                    width: 60%;
+                    padding: 30px 5px;
+                    font-size: 20px;
+                }
+                .checkOutCardPriceBox{
+                    height: 100%;
+                    width: 20%;
+                    padding: 30px 20px;
+                    font-size: 20px;
+                }
+            }
+        }
+        .boxMiddle{
+            margin: 50px 0px;
+            width: 500px;
+            .totalsBox{
+                height: 50px;
+                width: 90%;
+                border-bottom: 2px solid gray;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                p{
+                    font-size: 20px;
+                }
+            }
+            .radioBox{
+                margin-top: 20px;
+                width: 100%;
+                div{
+                    display: flex;
+                    gap: 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                   
+                    input[type=radio] {
+                        accent-color: black;
+                       width:  20px;
+                       height: 20px;
+                       margin: 10px 0px;
+                     }
+                     img{
+                       width: 180px;
+                       height: 40px;
+                     }
+                }
+                
+
+            }
+        }
+        .boxDown{
+            width: 500px;
+            height: 200px;
+            .couponBoxUp{
+                height: 50px;
+                margin-bottom: 20px;
+                display: flex;
+                justify-content: space-between;
+                input{
+                    height: 100%;
+                    width: 55%;
+                    border-radius: 5px;
+                    border: 1px solid black;
+                    padding: 0px 20px;
+                    font-size: 17px;
+                }
+                .applyBtn{
+                    background-color: #DB4444;
+                    height: 100%;
+                    width: 40%;
+                    border-radius: 5px;
+                    @include MyFlex();
+                    color: white;
+                }
+            }
+            .couponBoxDown{
+                height: 50px;   
+                .placeBtn{
+                    background-color: #DB4444;
+                    height: 100%;
+                    width: 35%;
+                    border-radius: 5px;
+                    @include MyFlex();
+                    color: white; 
+                }
+
+            }
+        }
+    }
 }
